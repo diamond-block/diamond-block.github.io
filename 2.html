@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="shortcut icon" href="https://data1.sticker.fan/stickers_storage/2022/04/19/file_8914333_512x512.webp">
+        <title>Russia-Ukraine War | By 6klightning</title>
+    
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <ul>
+          <li><div style="background-color:blue; padding:14px;">
+          </div>
+          <div style="background-color:yellow; padding:14px;">
+          </div></li>
+            <li><a href="https://www.youtube.com/watch?v=xDeQVaoTvJM">Ukraine's National Anthem</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Ukraine">Ukraine Wikipedia</a></li>
+            <li><a href="https://help.unicef.org/ukraine-emergency?country=SG&gclid=EAIaIQobChMIkeu06d-A_AIVkgByCh2ykgCcEAAYASAAEgIpx_D_BwE&gclsrc=aw.ds">Donate to Ukraine via UNICEF</a></li>
+            <li><a href="https://standwithukraine.live/">Stand With Ukraine!</a></li>
+            <li id="backinfo" style="float:right">Background music(Ukraine National Anthem)<br>
+            You can turn it on and off.</li>
+          </ul>
+          <audio controls style="float:right" loop><source src="assets/anthem.mp3" type="audio/mp3"></audio>
+          <p style ="text-align: center"><br>Time since the start of the war:</p>
+        <h4 id="demo"></h4>
+<script>
+// Set the date we're counting down to
+var countStartDate = new Date("Feb 24, 2022").getTime();
+var countYearStart = new Date ("Jan 1, 2022").getTime();
+            
+            
+// Update the count down every 1 second
+var x = setInterval(function() {
+            
+  // Get todays date and time
+  var now = new Date().getTime();
+            
+  // Find the distance between now and the count down date
+  var distance = now - countYearStart + countYearStart - countStartDate ;
+            
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<style>
+    h2{
+        color:white;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color:rgb(150, 150, 255);
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 10px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -800%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 70%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: -583px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 1px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -32px;
+}
+
+/* Fix the circle for containers on the left side */
+.left::after {
+  left: 621px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  width:600px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+
+
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+</style>
+    </head>
+    <p="Ukraine"></p>
+
+    <script src="scrips/scrips.js"></script>
+    <body>
+        <p class="intro">
+        The Russo-Ukrainian war has been going on since 2014 with the Russian annexation of Crimea. Russia invaded Ukraine on 24 Feburary 2022. It caused around 7.8 million refugees to flee from Ukraine. There have been many invasions of Ukraine because of its strategic position - it has a long coast along the Black Sea and it is between Asia and Europe. The earliest Russian invasion of Ukraine was in 1659. However, the current invasion is intended to stop Ukraine from joining NATO (North Atlantic Treaty Organisation). However, the invasion has left Russia's next-door-neighbours Sweden and Finland pushing to join Nato. This timeline will show you the progression of the invasion.
+        </p>
+        <img src = "https://data1.sticker.fan/stickers_storage/2022/04/19/file_8914333_512x512.webp" width="100" height="100">
+        <table>
+          <tr>
+            <td> <div><iframe width="560" height="315" src="https://www.youtube.com/embed/0Qqo05UBTIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td> <div class="mapouter" style="padding-left:600px;"><div class="gmap_canvas"><iframe class="gmap_iframe" width=80%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=436&amp;height=330&amp;hl=en&amp;q=kyiv&amp;t=&amp;z=5&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width: 650px;;height:330px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:330px;}.gmap_iframe {height:330px!important;}</style></div></div>
+              </td>
+          </tr>
+        </table>
+ <br></br>
+        <h2><p></p>Russia-Ukraine Invasion Timeline</p>
+        </p>
+        <p id="message"></p>
+        <script src="scrips/scrips.js"></script>
+            <div class="timeline" style="background-color:rgb(150, 150, 255)">
+
+
+                <div class="container right">
+                  <div class="content">
+                    <img src = "https://data1.sticker.fan/stickers_storage/2022/04/19/file_8914333_512x512.webp" width="100" height="100">
+                    <h3>24 Feburary 2022</h3>
+                    <p id="timeline">The invasion began on the morning of 24 February, when Russian president Vladimir Putin announced a "special military operation" aiming for the "demilitarisation" and "denazification" of Ukraine. In his address, Putin espoused irredentist views, challenged Ukraine's right to statehood, and falsely claimed Ukraine was governed by neo-Nazis who persecuted the ethnic Russian minority. Minutes after that, Russia shot missiles into Ukraine and launched a ground invasion. Ukrainian president Volodymyr Zelenskyy enacted martial law and a general mobilisation.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" style="background-color:rgb(150, 150, 255)">
+                <div class="container left">
+                  <div class="content">
+                    <img src = "assets/2022_Russian_Invasion_of_Ukraine_Phase_1_animated.gif" width="70%" height="70%">
+                    <h3>March-April 2022</h3>
+                    <p id="timeline">The Russian northern advance towards Kyiv stopped in its tracks and by April it was being pushed back north. However, on the southern and south-eastern fronts, Russia captured Kherson in March.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" style="background-color:rgb(150, 150, 255)">
+                <div class="container right">
+                  <div class="content">
+                    <img src ="assets/_123959373_ukraine_rebel_held_areas_30march_640x2-nc.png"width="70%" height="70%">
+                    <h3>May 2022</h3>
+                    <p id="timeline">Russia captured Mairupol in May after a siege of the city.Pro-Russian separatist forces are seen in the Donetsk Oblast in eastern Ukraine on May 28, 2022. Ukraine's armed forces said in an operational update that seven Russian attacks had been repulsed in Donetsk and Luhansk in the previous 24 hours.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" style="background-color:rgb(150, 150, 255)">
+                <div class="container left">
+                  <div class="content">
+                    <img src ="assets/images.jfif"width="70%" height="70%">
+                    <h3>June 2022</h3>
+                    <p id="timeline">Ukrainian forces attacked Snake Island (Zmiinyi island). In response to Ukrainian strikes, Russian forces reportedly deployed additional air defense and rocket group units, as well as special forces, to the island. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" style="background-color:rgb(150, 150, 255)">
+                <div class="container right">
+                  <div class="content">
+                    <img src ="assets/download.jfif"width="70%" height="70%">
+                    <h3>August 2022</h3>
+                    <p id="timeline">Russian shelling hit cities near Ukraine’s Zaporizhzhia nuclear power plant overnight.Schools, homes and other civilian infrastructure had been destroyed or damaged. Ukrainian forces launched counteroffensives in the south.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" style="background-color:rgb(150, 150, 255)">
+                <div class="container left">
+                  <div class="content">
+                    <img src ="assets/download (1).jfif"width="70%" height="70%">
+                    <h3>September 2022</h3>
+                    <p id="timeline">Ukraine launched a counteroffensive in the east. Soon after, Russia announced the illegal annexation of four partially occupied oblasts (Donetsk, Kherson, Luhansk and Zaporizhzhia).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" style="background-color:rgb(150, 150, 255)">
+                <div class="container right">
+                  <div class="content">
+                    <img src ="assets/2022_Russian_Invasion_of_Ukraine_Phase_3_animated_(cropped).gif"width="70%" height="70%">
+                    <h3>October-November 2022</h3>
+                    <p id="timeline">On 8 October 2022, the Crimean Bridge partially collapsed due to an explosion.Russia later blamed Ukraine for the blast, and launched retaliatory missile strikes against Ukrainian civilian areas. Since mid-October, Russia has carried out waves of strikes on Ukrainian electrical and water systems. On 15 November 2022, Russia fired 85 missiles at the Ukrainian Power Grid, causing major power outages in Kyiv and neighboring regions.</p>
+                </div>
+              </div>
+            </div>
+          </h2>
+        <img src ="assets/question.png"width="20%" height="20%" class="center">
+        <h1>MORE INTERESTING FACTS ABOUT UKRAINE</h1>
+        <h1>Importance of Ukraine</h1>
+        <p id="backinfo"><img src="assets/wheat"width="20%" height="20%" style="float:left">Ukraine is the 2nd largest country in Europe, and the 44th largest in the world. It has a population of around 40 million people. Both Ukraine and Russia are leading producers of wheat which is why the war is detrimental not just to Ukraine and Russia, but to the whole world.</p>      
+        <br></br>
+        <h1>History of Ukraine</h1>
+        <p id="backinfo"><img src="assets/saddle.jpg"width="20%" height="20%" style="float:right">In the 6th to 3rd BCE, the Scythians settled in what is now Ukraine. If you like to ride horses, thank them as they invented the saddle. The Scythian army was strong because of that. At the same time, there were Greek colonies on what are now the Ukrainian shores of the Black Sea and during their rule in what is today Ukraine, the Romans established economic and cultural contacts with the neighboring Scythians, Sarmatians, and tribes of the Zarubyntsi culture.<br><br><br><br><br><br> In 882AD, the Kievan Rus was established. The modern nations of Belarus, Russia, and Ukraine all claim Kievan Rusʹ as their cultural ancestor, with Belarus and Russia deriving their names from it.
+        <p id="backinfo"><img src="assets/Coin_of_Vladimir_the_Great_(reverse).svg.png"width="20%" height="20%" style="float:left">In 998AD, the ruler of the Kievan Rus', Vladimir the Great, converted to Christianity and Christianized the Kievan Rus'. This act fundamentally altered the historical trajectory of the Rus' and led to his declaration as a saint in both Western Christianity and the Eastern Orthodox Church, Vladimir is thus also known as Saint Vladimir or Saint Volodymyr. The coin on the left is the Rurikid princely emblem of Vladimir the Great depicted on a coin. In AD1240, the Kievan Rus disintegrated under the pressure of the Mongol invasion of the Rus'.<img src="assets/1400.jpg" height="30%" width="30%" style="float:right" ><br><br><br><br><br><br>During the 14th and 15th centuries, present-day Ukrainian territories came under the rule of four external powers: the Golden Horde, the Crimean Khanate, the Grand Duchy of Lithuania and the Crown of the Kingdom of Poland. The latter two would then merge into the Polish–Lithuanian Commonwealth following the Union of Krewo and Union of Lublin. <br><br><br><br><br><br>The 1648 Ukrainian Cossack (Kozak) rebellion or Khmelnytsky Uprising, which started an era known as the Ruin (in Polish history as The Deluge), undermined the foundations and stability of the Commonwealth. The nascent Cossack state, the Cossack Hetmanate, usually viewed as precursor of Ukraine, found itself in a three-sided military and diplomatic rivalry with the Ottoman Turks, who controlled the Tatars to the south, the Commonwealth of Poland and Lithuania, and the Tsardom of Muscovy to the East.The Zaporizhian Host, in order to leave the Polish–Lithuanian Commonwealth, sought a treaty of protection with Russia in 1654. This agreement was known as the Treaty of Pereyaslav (To celebrate the 300th anniversary of the treaty, the Soviet Union gave the Ukrainian Soviet Socialist Republic Crimea but that's not important right now).<img src="assets/Ukraine-growth.png" width="50%" height="50%"style="float:left"> <br><br><br><br><br><br>In 1917, When the Bolsheviks overrthrough the russian monarchy, Russia was in chaos.Ukraine took the chance to declare itself independent but independence was short lived as most Ukrainian lands were incorporated into the Soviet Union and the remainder, in western Ukraine, was divided among Poland, Czechoslovakia, and Romania.From 1929 to 1939, The Great Depression happened.The USSR was not that affected as it was a communist country but from 1930 to 1933, a famine known as Holodomor(Terror Famine) left millions dead, the majority of them Ukrainians.<img src="assets/20.jpg"height="40%"width="40%" style="float:right"><br><br><br><br><br><br>After World War II, some amendments to the Constitution of the Ukrainian SSR were accepted, which allowed it to act as a separate subject of international law in some cases and to a certain extent, remaining a part of the Soviet Union at the same time. In particular, these amendments allowed the Ukrainian SSR to become one of the founding members of the United Nations (UN) together with the Soviet Union and the Byelorussian SSR. This was part of a deal with the United States to ensure a degree of balance in the General Assembly, which, the USSR opined, was unbalanced in favor of the Western Bloc. In its capacity as a member of the UN, the Ukrainian SSR was an elected member of the United Nations Security Council in 1948–1949 and 1984–1985.<br><br><br><br><br><br>With the collapse of the Soviet Union in 1991, Ukraine became an independent state, formalised with a referendum in December 1991. On 21 January 1990, over 300,000 Ukrainians organized a human chain for Ukrainian independence between Kyiv and Lviv. Ukraine officially declared itself an independent country on 24 August 1991, when the communist Supreme Soviet (parliament) of Ukraine proclaimed that Ukraine would no longer follow the laws of USSR and only the laws of the Ukrainian SSR, de facto declaring Ukraine's independence from the Soviet Union. On 1 December, voters approved a referendum formalizing independence from the Soviet Union. Over 90% of Ukrainian citizens voted for independence, with majorities in every region, including 56% in Crimea. The Soviet Union formally ceased to exist on 26 December, when the presidents of Ukraine, Belarus and Russia (the founding members of the USSR) met in Białowieża Forest to formally dissolve the Union in accordance with the Soviet Constitution. Ukraine was finally independent.</p>
+        <br></br>
+        <h1>Significance of the Ukrainian flag</h1>
+        <p id="backinfo"><img src="assets/flag.webp"width="20%" height="20%" style="float:left">The modern State flag of Ukraine was officially adopted in 1992 when the Soviet Empire disbanded. The yellow and blue bicolour from the Ukrainian People’s Republic was chosen. The colours symbolise blue sky above the yellow field of wheat representing Ukraine and the Ukrainians as they are -- freedom-loving, independent, brave, and vibrant.</p>
+        <br></br>
+        <h1>Important Ukranians</h1>
+        <p id="backinfo"><iframe style = "float:left" width="560" height="315" src="https://www.youtube.com/embed/XPXijdUCDNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>Volodymyr Zelenskyy – and his staff of professional communicators – are very good at strategic communication, and it should be noted that Zelenskyy was an actor and a comedian before he was elected president in 2019. He is trained to be on the stage and in the limelight, communicating to the audience not only with words, but also by way of voice control and being conscious of his body language, posture, visual identity etc.</p>
+        <br></br>
+        <p id ="backinfo"><img src="assets/women.jfif" width="30%" height="30%" style="float:right">From the New York Times: Women have become an omnipresent force in Ukraine’s war. They are increasingly joining the military, including in combat positions, and spearheading volunteer and fund-raising efforts. And with men still making up a majority of combatants, women are taking on extra roles in civilian life, running businesses in addition to looking after their families.</p>
+        <br></br>
+        <p id = "backinfo"><img src="assets/child.jpg" width="30%" height="30%" style="float:left">The children of Ukraine have endured more than nine months of escalating devastation and displacement. Children continue to be killed, wounded and deeply traumatized by the violence all around them. Schools, hospitals and other civilian infrastructure on which they depend continue to be damaged or destroyed. One month into the war in Ukraine led to the displacement of 4.3 million children – more than half of the country’s estimated 7.5 million child population. This includes more than 1.8 million children who have crossed into neighbouring countries as refugees and 2.5 million who are now internally displaced inside Ukraine.</p>
+        <br></br>
+        <p id="banner"><a href="https://help.unicef.org/ukraine-emergency?country=SG&gclid=EAIaIQobChMIkeu06d-A_AIVkgByCh2ykgCcEAAYASAAEgIpx_D_BwE&gclsrc=aw.ds">If you wish to help Ukraine, click on this link to donate to UNICEF. </a><br>Please do your part to end the conflict and human suffering!</p>
+        <p style="color:black;font-size:18px;">Disclaimer: The views expressed here are my personal opinions based on articles I read online. <br>My sole intent is to raise more awareness of the Russia Ukraine war, to help the people affected.<br>Sources & References: Wikipedia, CNN, BBC, New York Times, Google Maps, Youtube</p>      
+      </body>
+</html>
